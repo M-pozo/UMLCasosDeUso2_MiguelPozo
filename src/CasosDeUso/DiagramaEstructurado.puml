@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+:Empleado: as A1
+
+usecase "Alta Cliente" as UC1
+usecase "Introducir Pedido" as UC2
+usecase "Obtener Estado Pedido" as UC3
+usecase "Buscar Pedido" as UC4
+usecase "Cancelar Pedido" as UC5
+usecase "Buscar Cleinte" as UC6
+usecase "Pago con tarjeta" as UC7
+usecase "Pago en cuenta" as UC8
+
+
+A1 -- UC1
+A1 -- UC2
+A1 -- UC3
+A1 -- UC4
+A1 -- UC5
+
+UC1 ..> UC2 : <<extend>>
+UC2 ..> UC6 : <<include>>
+UC3 ..> UC4 : <<include>>
+UC5 ..> UC4 : <<include>>
+UC2 <.. UC7 : <<extend>>
+UC2 <.. UC8 : <<extend>>
+
+
+
+@enduml
