@@ -7,6 +7,6 @@ rectangle "Empresa Pedidos"{
 }
 
 A1 -- "Empresa Pedidos"
-A2 --"Empresa Pedidos"
+"Empresa Pedidos" -- A2
 
 @enduml
