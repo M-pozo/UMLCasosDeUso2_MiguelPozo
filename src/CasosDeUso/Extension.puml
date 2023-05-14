@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+:Agente: as A1
+
+usecase "Evaluar Solicitud de Crédito" as UC1
+usecase "Solicitar información adicional a cliente" as UC2
+
+A1 --> UC1
+UC1 <.. UC2 : <<extend>> Si ingreso < 1000
+
+@enduml
