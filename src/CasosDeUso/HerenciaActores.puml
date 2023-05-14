@@ -1,0 +1,13 @@
+@startuml
+top to bottom direction
+:Cleinte Bancario: as A1
+:Cleinte Corporativo: as A2
+:Cliente Normal: as A3
+
+A1 <|-- A3
+A1 <|-- A2
+
+note right of A1 : Actor antecesor
+note right of A3 : Actor descendiente
+
+@enduml
