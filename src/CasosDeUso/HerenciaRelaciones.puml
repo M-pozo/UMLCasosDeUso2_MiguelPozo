@@ -1,0 +1,11 @@
+@startuml
+top to bottom direction
+:Agente: as A1
+usecase "Enviar solicitud crédito" as UC1
+usecase "Enviar solicitud de crédito personal" as UC2
+usecase "Enviar solicitud de crédito empresarial" as UC3
+
+A1 --> UC1
+UC1 <|-- UC2
+UC1 <|-- UC3
+@enduml
