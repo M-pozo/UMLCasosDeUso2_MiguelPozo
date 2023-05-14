@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+
+:Bibliotecario: as A1
+
+usecase "Baja Socio" as UC1
+usecase "Buscar Socio" as UC2
+
+A1 --> UC1
+UC1 ..> UC2 : <<include>>
+
+@enduml
