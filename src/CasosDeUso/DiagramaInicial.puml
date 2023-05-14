@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+:Empleado: as A1
+:Administrador: as A2
+
+rectangle "Empresa Pedidos"{
+    usecase "Introducir Pedido" as UC1
+    usecase "Cancelar Pedido" as UC2
+    usecase "Obtener Estado Pedido" as UC3
+    usecase "Borrar Pedido" as UC4
+    usecase "Buscar Pedido" as UC5
+    usecase "Alta Cliente" as UC6
+    usecase "Buscar Cliente" as UC7
+    usecase "Nuevo Producto" as UC8
+    usecase "Borrar Producto" as UC9
+}
+
+A1 -- UC1
+A1 -- UC2
+A1 -- UC3
+A1 -- UC4
+A1 -- UC5
+A1 -- UC6
+A1 -- UC7
+
+UC8 -- A2
+UC9 -- A2
+@enduml
